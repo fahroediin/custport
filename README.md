@@ -49,6 +49,19 @@ npm run dev
 
 Buka `http://localhost:3000`
 
+## 🚀 Deploy ke Vercel
+
+Aplikasi ini sudah dikonfigurasi (`vercel.json`) agar siap di-deploy secara gratis di [Vercel](https://vercel.com):
+
+1. Push kode Anda ke GitHub/GitLab.
+2. Login ke Vercel dan buat project baru dari repository tersebut.
+3. Di bagian **Environment Variables** sebelum deploy, tambahkan:
+   - `SUPABASE_URL` = (isi URL Anda)
+   - `SUPABASE_ANON_KEY` = (isi Anon Key Anda)
+4. Klik **Deploy**. Vercel otomatis mengarahkan frontend statis dan backend `/api`.
+
+*Catatan: Port atau script start khusus tidak diperlukan karena Vercel mengenali file `server.js` sebagai serverless function.*
+
 ## 📁 Struktur File
 
 ```
