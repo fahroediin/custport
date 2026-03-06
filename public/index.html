@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="purple-phantom">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="A fully customizable portfolio with 5 beautiful color themes">
+    <link id="web-icon" rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============================== -->
+<!--            HEADER              -->
+<!-- ============================== -->
+<header class="hidden">
+    <div class="container">
+        <h1 id="user-name">Loading...</h1>
+        <p id="user-position"></p>
+        <p id="user-introduction"></p>
+        <p id="user-address"></p>
+        
+        <div class="social-links"></div>
+        
+        <div class="cv-button-container">
+            <a id="user-cv" href="#" class="cv-button" target="_blank" download>
+                <span>View CV</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+    <main class="container">
+        <section id="education" class="hidden">
+            <h2>Education</h2>
+            <div class="timeline"></div>
+        </section>
+
+        <section id="skillset" class="hidden">
+            <h2>Skillset</h2>
+            <p class="skillset-prompt">
+                <i class="fa-solid fa-hand-pointer"></i> Hover over a skill to learn more.
+            </p>
+            <div class="skills-grid"></div>
+        </section>
+
+        <section id="work-experience" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="timeline"></div>
+        </section>
+        
+        <section id="internship" class="hidden">
+            <h2>Internship</h2>
+            <div class="timeline"></div>
+        </section>
+
+        <section id="projects" class="hidden">
+            <h2>Projects</h2>
+            <div class="grid" id="projects-grid"></div>
+        </section>
+
+        <section id="certificates" class="hidden">
+            <h2>Certificates</h2>
+            <div class="grid" id="certificates-grid"></div>
+        </section>
+    </main>
+
+<div class="quick-nav">
+    <button id="nav-up" class="nav-button" aria-label="Scroll to top">▲</button>
+    <button id="nav-down" class="nav-button" aria-label="Scroll to next section">▼</button>
+</div>
+
+<footer class="hidden">
+    <p>© <span id="footer-year"></span>. <span id="footer-text"></span></p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
