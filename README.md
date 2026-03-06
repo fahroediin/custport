@@ -26,7 +26,7 @@ Owner mengatur semua konten dan tema melalui Supabase Dashboard — pengunjung h
 ### 2. Konfigurasi Lokal
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/fahroediin/custport.git
 cd custport
 npm install
 ```
